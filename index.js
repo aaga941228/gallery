@@ -9,16 +9,25 @@ window.addEventListener("load", () => {
   document.querySelector("#grid").classList.add("imagenes-cargadas");
 
   const enlaces = document.querySelectorAll("#categorias a");
-  enlaces.forEach((element) => {
-    element.addEventListener("click", (event) => {
-      event.preventDefault();
+  enlaces.forEach((elemento) => {
+    elemento.addEventListener("click", (evento) => {
+      evento.preventDefault();
       enlaces.forEach((enlace) => enlace.classList.remove("activo"));
-      event.target.classList.add("activo");
+      evento.target.classList.add("activo");
 
-      const categoria = event.target.innerHTML.toLowerCase();
+      const categoria = evento.target.innerHTML.toLowerCase();
       categoria === "todos"
         ? grid.filter("[data-categoria]")
         : grid.filter(`[data-categoria="${categoria}"]`);
     });
   });
+
+  document
+    .querySelector("#barra-busqueda")
+    .addEventListener("input", (evento) => {
+      const busqueda = evento.target.value;
+      grid.filter((item) =>
+        item.getElement().dataset.etiquetas.includes(busqueda)
+      );
+    });
 });
