@@ -56,10 +56,39 @@ header .categorias {
 header .categorias a {
   color: #9b9b9b;
   margin: 10px 20px;
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 700;
 }
 
-header .categorias a:activo {
+header .categorias a.activo {
   color: #000;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s linear 0.5s;
+}
+
+.grid.imagenes-cargadas {
+  opacity: 1;
+}
+
+.grid .item {
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+}
+
+.gird .item-contenido {
+  position: relative;
+}
+
+.grid .item img {
+  width: 100%;
+  cursor: pointer;
+  vertical-align: top;
 }
