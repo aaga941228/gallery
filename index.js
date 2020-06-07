@@ -30,4 +30,27 @@ window.addEventListener("load", () => {
         item.getElement().dataset.etiquetas.includes(busqueda)
       );
     });
+
+  const overlay = document.querySelector("#overlay");
+
+  document.querySelectorAll(".grid .item img").forEach((elemento) => {
+    elemento.addEventListener("click", () => {
+      const ruta = elemento.getAttribute("src");
+      const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
+      overlay.classList.add("activo");
+      document.querySelector("#overlay img").src = ruta;
+      document.querySelector("#overlay .descripcion").innerHTML = descripcion;
+    });
+  });
+
+  document
+    .querySelector("#btn-cerrar-popup")
+    .addEventListener("click", (event) => {
+      event.preventDefault();
+      overlay.classList.remove("activo");
+    });
+
+  overlay.addEventListener("click", (event) => {
+    event.target.id === "overlay" && overlay.classList.remove("activo");
+  });
 });
