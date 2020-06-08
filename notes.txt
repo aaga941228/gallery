@@ -1,0 +1,132 @@
+
+        <!--<div
+          class="item"
+          data-categoria="videojuegos"
+          data-etiquetas="videojuegos zelda"
+          data-descripcion="zelda 1"
+        >
+          <div class="item-contenido">
+            <img src="./images/zelda1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="item"
+          data-categoria="videojuegos"
+          data-etiquetas="videojuegos zelda"
+          data-descripcion="zelda 2"
+        >
+          <div class="item-contenido">
+            <img src="./images/zelda2.jpg" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="item"
+          data-categoria="videojuegos"
+          data-etiquetas="videojuegos zelda"
+          data-descripcion="zelda 3"
+        >
+          <div class="item-contenido">
+            <img src="./images/zelda3.jpg" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="item"
+          data-categoria="videojuegos"
+          data-etiquetas="videojuegos palutena"
+          data-descripcion="palutena 1"
+        >
+          <div class="item-contenido">
+            <img src="./images/palutena1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="item"
+          data-categoria="videojuegos"
+          data-etiquetas="videojuegos palutena"
+          data-descripcion="palutena 2"
+        >
+          <div class="item-contenido">
+            <img src="./images/palutena2.jpg" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="item"
+          data-categoria="videojuegos"
+          data-etiquetas="videojuegos palutena"
+          data-descripcion="palutena 3"
+        >
+          <div class="item-contenido">
+            <img src="./images/palutena3.jpg" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="item"
+          data-categoria="anime"
+          data-etiquetas="anime sawachika"
+          data-descripcion="sawachika 1"
+        >
+          <div class="item-contenido">
+            <img src="./images/sawachika1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="item"
+          data-categoria="anime"
+          data-etiquetas="anime sawachika"
+          data-descripcion="sawachika 2"
+        >
+          <div class="item-contenido">
+            <img src="./images/sawachika2.jpg" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="item"
+          data-categoria="anime"
+          data-etiquetas="anime sawachika"
+          data-descripcion="sawachika 3"
+        >
+          <div class="item-contenido">
+            <img src="./images/sawachika3.jpg" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="item"
+          data-categoria="anime"
+          data-etiquetas="anime kotegawa"
+          data-descripcion="kotegawa 1"
+        >
+          <div class="item-contenido">
+            <img src="./images/kotegawa1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="item"
+          data-categoria="anime"
+          data-etiquetas="anime kotegawa"
+          data-descripcion="kotegawa 2"
+        >
+          <div class="item-contenido">
+            <img src="./images/kotegawa2.jpg" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="item"
+          data-categoria="anime"
+          data-etiquetas="anime kotegawa"
+          data-descripcion="kotegawa 3"
+        >
+          <div class="item-contenido">
+            <img src="./images/kotegawa3.jpg" alt="" />
+          </div>
+        </div> -->

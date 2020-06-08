@@ -1,14 +1,29 @@
+const gridContainer = document.querySelector("#grid")
+const templateItem  = item => (`
+  <div
+  class="item"
+  data-categoria="${item.categoria}"
+  data-etiquetas="${item.etiquetas}"
+  data-descripcion="${item.descripcion}"
+  >
+    <div class="item-contenido">
+      <img src="${item.path}" alt="${item.descripcion}" />
+    </div>
+  </div>
+`)
+
+images.map(item => {
+  gridContainer.innerHTML += templateItem(item)
+  console.log(templateItem(item))
+})
+
 const grid = new Muuri(".grid", {
   layout: {
     rounding: false,
   },
 });
 
-window.addEventListener("load", () => {
-  grid.refreshItems().layout();
-  document.querySelector("#grid").classList.add("imagenes-cargadas");
-
-  const enlaces = document.querySelectorAll("#categorias a");
+const enlaces = document.querySelectorAll("#categorias a");
   enlaces.forEach((elemento) => {
     elemento.addEventListener("click", (evento) => {
       evento.preventDefault();
@@ -53,4 +68,8 @@ window.addEventListener("load", () => {
   overlay.addEventListener("click", (event) => {
     event.target.id === "overlay" && overlay.classList.remove("activo");
   });
+
+window.addEventListener("load", () => {
+  grid.refreshItems().layout();
+  gridContainer.classList.add("imagenes-cargadas");
 });
