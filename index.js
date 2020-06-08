@@ -7,7 +7,7 @@ const templateItem  = item => (`
   data-descripcion="${item.descripcion}"
   >
     <div class="item-contenido">
-      <img src="${item.path}" alt="${item.descripcion}" />
+      <img src="${item.path}" alt="${item.descripcion}" loading="lazy"/>
     </div>
   </div>
 `)
