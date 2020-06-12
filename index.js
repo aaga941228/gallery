@@ -1,4 +1,5 @@
 const gridContainer = document.querySelector("#grid")
+const btnSwitch = document.querySelector('#switch')
 const templateItem  = item => (`
   <div
   class="item"
@@ -12,10 +13,29 @@ const templateItem  = item => (`
   </div>
 `)
 
-images.map(item => {
+imagesList().map(item => {
   gridContainer.innerHTML += templateItem(item)
   console.log(templateItem(item))
 })
+
+btnSwitch.addEventListener('click', () => {
+  document.body.classList.toggle('oscuro')
+  btnSwitch.classList.toggle('activo')
+
+  if(document.body.classList.contains('oscuro')) {
+    localStorage.setItem('modo-oscuro', 'true')
+  } else {
+    localStorage.setItem('oscuro', 'false')
+  }
+})
+
+if(localStorage.getItem('oscuro') === 'true') {
+  document.body.classList.add('oscuro')
+  btnSwitch.classList.add('activo')
+} else {
+  document.body.classList.remove('oscuro')
+  btnSwitch.classList.remove('activo')
+}
 
 const grid = new Muuri(".grid", {
   layout: {
