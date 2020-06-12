@@ -68,6 +68,10 @@ header .barra-busqueda {
   font-size: 1rem;
 }
 
+header .barra-busqueda:focus {
+  outline: none;
+}
+
 header .categorias {
   display: flex;
   justify-content: center;
